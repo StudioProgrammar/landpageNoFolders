@@ -1,0 +1,167 @@
+.navbar {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   /* gap: 200px;*/
+
+
+}
+
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: var(--primaryFont);
+    color: rgb(13, 105, 136);
+
+}
+
+.logo-container {
+    margin-left: 20px;
+    margin-left: 200px;
+    margin-right: 20px;
+
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 200px;
+}
+
+#navbar-list {
+
+    list-style: none;
+    display: flex;
+
+    justify-content: space-between;
+    min-width: 650px;
+
+    padding-left: 0;
+
+    font-family: var(--secondaryFont);
+
+}
+
+#navbar-list li a{
+    text-decoration: none;
+    color: rgb(168, 103, 71);
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(168, 103, 71);
+    display: none;
+}
+
+
+
+@media (max-width: 1330px) {
+
+
+    .checkBtn {
+        display: block;
+        cursor: pointer;
+    }    
+
+
+    #navbar-list {
+        position: fixed;
+        z-index: 100;
+        top: 84px;
+        left: 100%;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        
+        padding-top: 60px;
+        gap: 60px;
+
+        justify-content: unset;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(13, 105, 136);
+        
+
+        transition: left 0.15s;
+    }
+
+    #navbar-list li a {
+        font-size: 20px;
+    }
+
+
+    #check:checked ~ .listing {
+        left: 0px; 
+    }
+
+    #check:checked ~ body {
+        max-height: 100%;
+        overflow-y: hidden;
+    }
+
+
+
+}
+
+
+@media (max-width: 797px) {
+    .logo-container {
+        margin-left: 50px;
+        margin-right: 60px;
+    }
+
+    .button-container {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-container {
+        margin-left: 20px;
+    }
+
+    #navbar-list {
+        align-items: unset;
+        padding-left: 38%;
+
+    }
+
+    .home-link {
+        padding-left: 10px;
+    }
+
+    .resource-link {
+        margin-left: -5px;
+    }
+
+    .dono-link {
+        margin-left: -5px;
+    }
+
+    .contact-link {
+        margin-left: -6px;
+    }
+
+
+
+
+}
+
+

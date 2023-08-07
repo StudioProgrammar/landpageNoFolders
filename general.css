@@ -1,0 +1,22 @@
+:root {
+    --primaryFont: Lora, sans-serif;
+    --secondaryFont: Montserrat, sans-serif;
+    font-size: 62.5%;
+    --brownColor: rgb(168, 103, 71);
+    --blueColor: rgb(13, 105, 136);
+
+
+}
+
+html, body { max-width: 100%; overflow-x: hidden; }
+
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+
+}
+
+p {
+    margin: 0;
+}

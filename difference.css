@@ -1,0 +1,145 @@
+.difference-section {
+  /*  width: fit-content;*/
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 20px;
+
+    margin-bottom: 70px;
+
+
+
+  /*  margin-left: 15%;*/
+
+
+}
+
+.volunteer-container {
+    position: relative;
+
+    width: fit-content;
+}
+
+
+.volunteer-img {
+
+    object-fit: cover;
+    max-width: 620px;
+    height: 100%;
+}
+
+
+.img-tag {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+
+    color: white;
+}
+
+.img-tag a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.volunteer-main-article-container {
+
+    max-width: 65ch;
+    padding-left: 40px;
+    padding-right: 10px;
+
+
+}
+
+.volunteer-title {
+    font-family: var(--primaryFont);
+    color: rgb(168, 103, 71);
+    font-weight: 400;
+}
+
+.volunteer-info, .volunteer-subtitle {
+    font-size: 1.6rem;
+    background: transparent;
+
+    font-family: var(--secondaryFont);
+}
+
+.volunteer-info {
+    margin-bottom: 65px;
+}
+
+.volunteer-subtitle {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.volunteer-subtitle-gray {
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+
+    height: 180px;
+    width: 100%;
+    background-color: #5A5A5A;
+    opacity: 1;
+}
+
+.subtitle-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle-button {
+    font-family: var(--secondaryFont);
+    font-size: 1.6rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 11px 20px;
+    border-radius: 25px;
+
+    text-align: center;
+    font-weight: 500;
+    width: fit-content;
+
+    cursor: pointer;
+
+    transition: background-color 0.15s,
+    border-color 0.15s;
+}
+
+.subtitle-button:hover {
+    background-color: rgb(13, 105, 136);
+    border-color: rgb(13, 105, 136);
+}
+
+@media (max-width: 1080px) {
+    .difference-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .volunteer-subtitle-gray {
+        height: 180px;
+    }
+
+    .subtitle-button {
+        align-self: center;
+    }
+
+    .volunteer-main-article-container {
+        text-align: center;
+    }
+}
+
+@media (max-width: 559px) {
+    .img-tag {
+        left: 30%;
+    }
+}
