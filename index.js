@@ -8,7 +8,8 @@ let checker = false;
 box.addEventListener('click' , () => {
 
     if(checker == false) {
-          document.body.style.position = 'fixed'  
+          document.body.style.position = 'fixed' 
+          checker = true; 
     } else if (checker == true) {
         document.body.style.position = 'unset'
     }
