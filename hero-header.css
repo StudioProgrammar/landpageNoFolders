@@ -4,13 +4,13 @@
     width: 100%;
     position: fixed;
     z-index: 300;
-    -webkit-backface-visibility: hidden;
-
+   /* -webkit-backface-visibility: hidden;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 
    /* gap: 200px;*/
+
 
 
 }
