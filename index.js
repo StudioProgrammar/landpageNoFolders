@@ -14,3 +14,16 @@ box.addEventListener('click' , () => {
         document.body.style.position = 'unset'
     }
 })
+
+
+/*
+
+if (checker == true) {
+    box.addEventListener('click' , () => {
+        document.body.style.position = 'unset'
+        checker == false;
+    })
+    
+}
+
+*/
