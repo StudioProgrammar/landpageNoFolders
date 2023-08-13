@@ -12,6 +12,7 @@ box.addEventListener('click' , () => {
           checker = true; 
     } else if (checker == true) {
         document.body.style.position = 'unset'
+        checker = false;
     }
 })
 
